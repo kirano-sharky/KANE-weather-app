@@ -29,5 +29,29 @@ body {
     justify-content: center;
     flex-direction: column;
     border-radius: 30px;
+    position: relative;
+}
 
+/*.メインコンテナ::before {
+    content: '';
+    position: absolute;
+}*/
+
+.メインコンテナの上部 {
+    text-align: center;
+}
+
+.メインコンテナの上部 h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 2;
+}
+
+.メインコンテナの上部 input, .メインコンテナの上部 button {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
 }
