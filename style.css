@@ -22,9 +22,10 @@ body {
     display: flex;
     /*background: white;*/
     background: url(img/background.jpg);
-    width: 350px;
+    width: 450px;
     /*max-width: 670px;*/
-    height: 500px;
+    height: 600px;
+    background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -44,6 +45,11 @@ body {
 .メインコンテナの上部 h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     line-height: 2;
+    font-size: 50px;
+}
+
+.メインコンテナの上部 h2 {
+    padding: 20px;
 }
 
 .メインコンテナの上部 input, .メインコンテナの上部 button {
@@ -54,4 +60,16 @@ body {
     padding: 10px;
     border: none;
     cursor: pointer;
+}
+
+.メインコンテナの上部 input {
+    background: linear-gradient(to right bottom, #d5b5e6, #b899c7);
+    color: #000;
+    font-size: 20px;
+    border-radius: 15px 0px;
+    text-align: center;
+}
+
+.メインコンテナの上部 input:focus {
+    font-size: 22px;
 }
