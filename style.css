@@ -52,7 +52,7 @@ body {
 }
 
 .メインコンテナの上部 h2 {
-    padding: 20px;
+    padding: 10px;
 }
 
 .メインコンテナの上部 input, .メインコンテナの上部 button {
@@ -92,4 +92,10 @@ body {
 .メインコンテナの上部 button:hover {
     background: aliceblue;
     transition: 0.3s;
+}
+
+.メインコンテナの上部 .エラー {
+    color: red;
+    font-size: 18px;
+    font-weight: 600;
 }
