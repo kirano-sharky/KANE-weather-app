@@ -16,7 +16,8 @@ body {
 }
 
 .容器 {
-    width: 100;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .メインコンテナ {
@@ -33,11 +34,6 @@ body {
     border-radius: 30px;
     position: relative;
 }
-
-/*.メインコンテナ::before {
-    content: '';
-    position: absolute;
-}*/
 
 .メインコンテナの上部 {
     text-align: center;
@@ -69,11 +65,13 @@ body {
     font-size: 20px;
     border-radius: 15px 0px;
     text-align: center;
-    border-width: 1px;
+    border-width: 0px;
 }
 
 .メインコンテナの上部 input:focus {
+    width: 350px;
     font-size: 22px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .メインコンテナの上部 input::placeholder {
@@ -86,20 +84,47 @@ body {
     border-radius: 50px;
     font-size: 20px;
     font-weight: 800;
-    cursor: pointer; 
+    cursor: pointer;
+    text-transform: lowercase;
+    transition: .5s;
 }
 
 .メインコンテナの上部 button:hover {
     background: aliceblue;
     transition: 0.3s;
+    filter: drop-shadow(0 1px 4px);
 }
 
 .メインコンテナの上部 .エラー {
-    color: red;
+    /*color: red;*/
     font-size: 18px;
     font-weight: 600;
 }
 
 .位置 {
     line-height: 2;
+}
+
+.位置 .街 {
+    font-size: 21px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.容器 {
+    padding-top: 15px;
+    position: relative;
+}
+
+.容器::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right bottom, #8ae4eb, #e072b4);
 }
