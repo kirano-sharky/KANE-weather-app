@@ -96,7 +96,7 @@ body {
 }
 
 .メインコンテナの上部 .エラー {
-    /*color: red;*/
+    color: red;
     font-size: 18px;
     font-weight: 600;
 }
@@ -128,4 +128,3 @@ body {
     left: 0;
     background: linear-gradient(to right bottom, #8ae4eb, #e072b4);
 }
-
