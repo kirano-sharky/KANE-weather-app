@@ -25,9 +25,10 @@ function getData () {
 function displayData (応答) {
     if (応答.cod === '404') {
         const エラー = document.querySelector('.エラー');
-        エラー.textContent = '請準確表達!';
+        エラー.textContent = '請記得準確表達哦!';
         探す.value = '';
-    } else {
+    } 
+    else {
         const 街 = document.querySelector('.街');
         街.innerText = `${応答.name}, ${応答.sys.country}`;
         /*const 成功 = document.querySelector('.成功')
@@ -53,3 +54,4 @@ function displayData (応答) {
         search.value = '';*/
     }
 }
+
