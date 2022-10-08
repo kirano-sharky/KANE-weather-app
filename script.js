@@ -29,23 +29,24 @@ function displayData (応答) {
         探す.value = '';
     } 
     else {
+        /*用於地點*/ 
         const 街 = document.querySelector('.街');
         街.innerText = `${応答.name}, ${応答.sys.country}`;
-
+        /*用於日期*/
         /*const today = new Date();
         const date = document.querySelector('.date');
-        date.innerText = dateFunction(today);
-
-        const temp = document.querySelector('.temp');
-        temp.innerHTML = `Temp: ${Math.round(response.main.temp)} <span>°C</span>`;
-
-        const weather = document.querySelector('.weather');
-        weather.innerText = `Weather: ${response.weather[0].main}`;
-
-        const tempRange = document.querySelector('.temp-range');
-        tempRange.innerText = `Temp Range: ${Math.round(response.main.temp_min)}°C / ${Math.round(response.main.temp_max)}°C`;
-
-        const weatherIcon = document.querySelector('.weather-icon');
+        date.innerText = dateFunction(today);*/
+        /*用於溫度*/
+        /*const temp = document.querySelector('.temp');
+        temp.innerHTML = `Temp: ${Math.round(response.main.temp)} <span>°C</span>`;*/
+        /*用於天氣*/
+        /*const weather = document.querySelector('.weather');
+        weather.innerText = `Weather: ${response.weather[0].main}`;*/
+        /*用於周圍溫度*/
+        /*const tempRange = document.querySelector('.temp-range');
+        tempRange.innerText = `Temp Range: ${Math.round(response.main.temp_min)}°C / ${Math.round(response.main.temp_max)}°C`;*/
+        /*用於天氣icon*/
+        /*const weatherIcon = document.querySelector('.weather-icon');
         const iconURL = 'http://openweathermap.org/img/w/';
         weatherIcon.src = iconURL + response.weather[0].icon + '.png';
 
