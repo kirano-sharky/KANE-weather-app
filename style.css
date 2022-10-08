@@ -33,6 +33,8 @@ body {
     flex-direction: column;
     border-radius: 30px;
     position: relative;
+    filter: drop-shadow(0 9px 9px);
+    color: #ebd1e0;
 }
 
 .メインコンテナの上部 {
@@ -49,6 +51,7 @@ body {
 
 .メインコンテナの上部 h2 {
     padding: 10px;
+    color: #000;
 }
 
 .メインコンテナの上部 input, .メインコンテナの上部 button {
@@ -73,6 +76,7 @@ body {
     font-size: 22px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     outline-color: #8ae4eb;
+    box-shadow: 0 0 9px 9px #8ae4eb;
 }
 
 .メインコンテナの上部 input::placeholder {
@@ -87,13 +91,19 @@ body {
     font-weight: 800;
     cursor: pointer;
     text-transform: lowercase;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .メインコンテナの上部 button:hover {
     background: aliceblue;
     transition: 0.3s;
     filter: drop-shadow(0 1px 4px);
+}
+
+.メインコンテナの上部 button:active {
+    background: #ebd1e0;
+    filter: drop-shadow(0 10px 10px);
+    color: #e072b4;
 }
 
 .メインコンテナの上部 .エラー {
@@ -113,6 +123,7 @@ body {
     text-decoration: underline;
     text-transform: uppercase;
     transition: .3s;
+    color: #000;
 }
 
 .容器 {
