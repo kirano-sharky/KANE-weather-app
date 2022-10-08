@@ -33,7 +33,7 @@ body {
     flex-direction: column;
     border-radius: 30px;
     position: relative;
-    filter: drop-shadow(0 9px 9px);
+    filter: drop-shadow(0 10px 10px);
     color: #ebd1e0;
 }
 
@@ -129,6 +129,7 @@ body {
 .容器 {
     padding-top: 15px;
     position: relative;
+    color: #000;
 }
 
 .容器::before {
@@ -141,23 +142,3 @@ body {
     background: linear-gradient(to right bottom, #8ae4eb, #e072b4);
 }
 
-@media screen and (max-width: 767px) {
-    body {
-        align-items: center;
-        justify-content: center;
-    }
-    body メインコンテナ {
-        display: flex;
-        background: white;
-        background: url(img/background.jpg);
-        width: 0px;
-        /*max-width: 670px;*/
-        height: 0px;
-        background-repeat: no-repeat;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        border-radius: 30px;
-        position: relative;
-    }
-}
