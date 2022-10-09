@@ -89,4 +89,3 @@ setInterval(()=>{
     return `${day}, ${date} ${month} ${year}`;
 }
 
-var loader = document.getElementsByClassName('music')
