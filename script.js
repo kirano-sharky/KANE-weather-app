@@ -38,19 +38,19 @@ function displayData (応答) {
         日にち.innerText = dateFunction(today);*/
         /*用於溫度*/
         const 温度 = document.querySelector('.温度');
-        温度.innerHTML = `Temp: ${Math.round(応答.main.temp)} <span>°C</span>`;
+        温度.innerHTML = `溫度: ${Math.round(応答.main.temp)}°C`;
         /*用於天氣*/
-        /*const weather = document.querySelector('.weather');
-        weather.innerText = `Weather: ${response.weather[0].main}`;*/
+        const 天気状況 = document.querySelector('.天気状況');
+        天気状況.innerText = `天氣: ${応答.weather[0].main}`;
         /*用於周圍溫度*/
-        /*const tempRange = document.querySelector('.temp-range');
-        tempRange.innerText = `Temp Range: ${Math.round(response.main.temp_min)}°C / ${Math.round(response.main.temp_max)}°C`;*/
+        const 温度範囲 = document.querySelector('.温度範囲');
+        温度範囲.innerText = `溫度範圍: ${Math.round(応答.main.temp_min)}°C / ${Math.round(応答.main.temp_max)}°C`;
         /*用於天氣icon*/
-        /*const weatherIcon = document.querySelector('.weather-icon');
+        const 天気アイコン = document.querySelector('.天気アイコン');
         const iconURL = 'http://openweathermap.org/img/w/';
-        weatherIcon.src = iconURL + response.weather[0].icon + '.png';
+        天気アイコン.src = iconURL + 応答.weather[0].icon + '.png';
 
-        search.value = '';*/
+        探す.value = '';
     }
 }
 

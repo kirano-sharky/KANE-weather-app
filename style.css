@@ -76,7 +76,7 @@ body {
     font-size: 22px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     outline-color: #8ae4eb;
-    box-shadow: 0 0 9px 9px #8ae4eb;
+    box-shadow: 0 0 10px 10px #8ae4eb;
 }
 
 .メインコンテナの上部 input::placeholder {
@@ -142,3 +142,6 @@ body {
     background: linear-gradient(to right bottom, #8ae4eb, #e072b4);
 }
 
+.容器 img {
+    width: 90px;
+}
