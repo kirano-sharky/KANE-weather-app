@@ -34,11 +34,11 @@ function displayData (応答) {
         街.innerText = `${応答.name}, ${応答.sys.country}`;
         /*用於日期*/
         /*const today = new Date();
-        const date = document.querySelector('.date');
-        date.innerText = dateFunction(today);*/
+        const 日にち = document.querySelector('.日にち');
+        日にち.innerText = dateFunction(today);*/
         /*用於溫度*/
-        /*const temp = document.querySelector('.temp');
-        temp.innerHTML = `Temp: ${Math.round(response.main.temp)} <span>°C</span>`;*/
+        const 温度 = document.querySelector('.温度');
+        温度.innerHTML = `Temp: ${Math.round(応答.main.temp)} <span>°C</span>`;
         /*用於天氣*/
         /*const weather = document.querySelector('.weather');
         weather.innerText = `Weather: ${response.weather[0].main}`;*/
@@ -76,3 +76,15 @@ setInterval(()=>{
     }
     日.textContent = 小時 + ":" + 分鐘 + ":" + 秒 + " "+ 時段;
   });
+
+  function dateFunction (oshi) {
+    let months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    let days = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
+
+    let day = days[oshi.getDay()];
+    let date = oshi.getDate();
+    let month = months[oshi.getMonth()];
+    let year = oshi.getFullYear();
+
+    return `${day}, ${date} ${month} ${year}`;
+}
