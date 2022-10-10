@@ -194,9 +194,13 @@ body {
 .現在 .温度 {
     margin-right: 60px;
     padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .現在 .温度範囲 {
     margin-left: 60px;
     padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
 }
