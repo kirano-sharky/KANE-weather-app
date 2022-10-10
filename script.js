@@ -33,9 +33,9 @@ function displayData (応答) {
         const 街 = document.querySelector('.街');
         街.innerText = `${応答.name}, ${応答.sys.country}`;
         /*用於日期*/
-        /*const today = new Date();
+        const today = new Date();
         const 日にち = document.querySelector('.日にち');
-        日にち.innerText = dateFunction(today);*/
+        日にち.innerText = dateFunction(today);
         /*用於溫度*/
         const 温度 = document.querySelector('.温度');
         温度.innerHTML = `溫度: ${Math.round(応答.main.temp)}°C`;

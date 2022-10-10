@@ -146,3 +146,21 @@ body {
     margin: 15px;
 }
 
+.容器 .紹介欄 {
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 100px;
+}
+
+.容器 .自己紹介 {
+    font-size: 25px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: #e072b4;
+}
+
+.容器 .自己紹介:hover {
+    font-size: 30px;
+    transition: .1s;
+    color: #adbcf0;
+}
