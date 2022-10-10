@@ -44,7 +44,7 @@ function displayData (応答) {
         天気状況.innerText = `天氣: ${応答.weather[0].main}`;
         /*用於周圍溫度*/
         const 温度範囲 = document.querySelector('.温度範囲');
-        温度範囲.innerText = `溫度周圍: ${Math.round(応答.main.temp_min)}°C / ${Math.round(応答.main.temp_max)}°C`;
+        温度範囲.innerText = `溫度範圍: ${Math.round(応答.main.temp_min)}°C / ${Math.round(応答.main.temp_max)}°C`;
         /*用於天氣icon*/
         const 天気アイコン = document.querySelector('.天気アイコン');
         const iconURL = 'http://openweathermap.org/img/w/';
