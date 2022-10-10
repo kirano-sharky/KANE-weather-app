@@ -78,14 +78,14 @@ setInterval(()=>{
   });
 
   function dateFunction (oshi) {
-    let months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
-    let days = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
+    let ヶ月 = ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"];
+    let 週 = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
 
-    let day = days[oshi.getDay()];
-    let date = oshi.getDate();
-    let month = months[oshi.getMonth()];
-    let year = oshi.getFullYear();
+    let 空 = 週[oshi.getDay()];
+    let 日 = oshi.getDate();
+    let 月 = ヶ月[oshi.getMonth()];
+    let 年 = oshi.getFullYear();
 
-    return `${day}, ${date} ${month} ${year}`;
+    return `${空}, ${日}-${月}-${年}`;
 }
 

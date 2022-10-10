@@ -19,7 +19,7 @@ body {
     display: flex;
     /*background: white;*/
     background: url(img/background.jpg);
-    width: 450px;
+    width: 470px;
     /*max-width: 670px;*/
     height: 600px;
     background-repeat: no-repeat;
@@ -149,7 +149,6 @@ body {
     margin: 15px;
     filter: drop-shadow(0 15px 15px);
     color: #000;
-    cursor: pointer;
 }
 
 .容器 img:hover {
@@ -198,7 +197,6 @@ body {
 }
 
 .現在 .温度範囲 {
-    margin-left: 70px;
+    margin-left: 60px;
     padding: 10px;
 }
-
