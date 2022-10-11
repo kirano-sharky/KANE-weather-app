@@ -21,7 +21,7 @@ body {
     background: url(img/background.jpg);
     width: 470px;
     /*max-width: 670px;*/
-    height: 600px;
+    height: 620px;
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
@@ -161,6 +161,7 @@ body {
     font-size: 18px;
     font-weight: 700;
     padding-top: 100px;
+    color: #000;
 }
 
 .容器 .自己紹介 {
@@ -208,11 +209,12 @@ body {
 .日にち {
     font-size: 20px;
     font-weight: 550;
+    color: #2fd2de;
 }
 
 .日にち .日 {
     font-size: 20px;
-    color: #e072b4;
+    color: #000;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
