@@ -17,10 +17,8 @@ body {
 
 .メインコンテナ {
     display: flex;
-    /*background: white;*/
     background: url(img/background.jpg);
     width: 470px;
-    /*max-width: 670px;*/
     height: 620px;
     background-repeat: no-repeat;
     align-items: center;
@@ -76,7 +74,7 @@ body {
     transition: .5s;
 }
 
-.メインコンテナの上部 input::placeholder {
+.メインコンテナの上部 #搜索欄 input::placeholder {
     color: grey;
 }
 
@@ -222,5 +220,26 @@ body {
     font-size: 20px;
     color: #e072b4;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.目録 {
+    background: #fff;
+    margin-top: 5px;
+    color: #000;
+    overflow: hidden;
+}
+
+.メインコンテナの上部 .目録 {
+    margin-top: 10px;
+}
+
+.目録 li {
+    height: 45px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.目録 li:hover {
+    background: red;
 }
 
