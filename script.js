@@ -1,3 +1,4 @@
+//天氣api内容⛅
 const api = {
     鍵: "46a437715100d9c915e7a19e646488f8",
     ベース: "https://api.openweathermap.org/data/2.5/"
@@ -29,23 +30,23 @@ function displayData (応答) {
         探す.value = '';
     } 
     else {
-        /*用於地點*/ 
+        //用於地點
         const 街 = document.querySelector('.街');
         街.innerText = `${応答.name}, ${応答.sys.country}`;
-        /*用於日期*/
+        //用於日期
         const today = new Date();
         const 日にち = document.querySelector('.日にち');
         日にち.innerText = dateFunction(today);
-        /*用於溫度*/
+        //用於溫度
         const 温度 = document.querySelector('.温度');
         温度.innerHTML = `溫度: ${Math.round(応答.main.temp)}°C`;
-        /*用於天氣*/
+        //用於天氣
         const 天気状況 = document.querySelector('.天気状況');
         天気状況.innerText = `天氣: ${応答.weather[0].main}`;
-        /*用於周圍溫度*/
+        //用於周圍溫度
         const 温度範囲 = document.querySelector('.温度範囲');
         温度範囲.innerText = `溫度範圍: ${Math.round(応答.main.temp_min)}°C / ${Math.round(応答.main.temp_max)}°C`;
-        /*用於天氣icon*/
+        //用於天氣icon
         const 天気アイコン = document.querySelector('.天気アイコン');
         const iconURL = 'http://openweathermap.org/img/w/';
         天気アイコン.src = iconURL + 応答.weather[0].icon + '.png';
@@ -54,6 +55,8 @@ function displayData (応答) {
     }
 }
 
+
+//時間内容⏰
 setInterval(()=>{
     const 日 = document.querySelector(".日");
     let 日期 = new Date();
@@ -77,6 +80,8 @@ setInterval(()=>{
     日.textContent = 小時 + ":" + 分鐘 + ":" + 秒 + " "+ 時段;
   });
 
+
+  //日曆内容📆
   function dateFunction (oshi) {
     let ヶ月 = ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"];
     let 週 = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
@@ -89,3 +94,33 @@ setInterval(()=>{
     return `${空}, ${月}-${日}日-${年}年`;
 }
 
+
+//搜尋各個國家内容📄
+let 国リスト = [
+  'fuck',
+  'you',
+  'bitch',
+  'noob',
+  'sucks'
+]
+
+let 国を並べ替える = 国リスト.sort();
+
+let 入力 = document.getElementById('入力');
+
+入力.addEventListener('keyup', (e) => {
+  for(let 私 of 国を並べ替える) {
+    if (
+      私.toLowerCase().startsWith(入力.value.toLowerCase()) && 入力.value != ''
+    ) {
+      let リストアイテム = document.createElement('li');
+      リストアイテム.classList.add('list-items');
+      リストアイテム.style.cursor = 'pointer';
+      リストアイテム.setAttribute('onclick', "displayNames('" + 私 + "')");
+      //
+      let 語 = '<b>' + 私.substr(0, 入力.value.length) + '</b>';
+      語+= 私.substr(入力.value.length);
+      console.log(語)
+    }
+  }
+})
