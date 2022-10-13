@@ -98,6 +98,7 @@ setInterval(()=>{
 //搜尋各個國家内容📄
 let 国リスト = [
   'fuck',
+  'friend',
   'you',
   'bitch',
   'noob',
@@ -105,11 +106,13 @@ let 国リスト = [
 ]
 
 let 国を並べ替える = 国リスト.sort();
-
 let 入力 = document.getElementById('入力');
 
 入力.addEventListener('keyup', (e) => {
+  //
+  removeElements();
   for(let 私 of 国を並べ替える) {
+    //
     if (
       私.toLowerCase().startsWith(入力.value.toLowerCase()) && 入力.value != ''
     ) {
@@ -120,7 +123,19 @@ let 入力 = document.getElementById('入力');
       //
       let 語 = '<b>' + 私.substr(0, 入力.value.length) + '</b>';
       語+= 私.substr(入力.value.length);
-      console.log(語)
+      リストアイテム.innerHTML = 語
+      document.querySelector('.リスト').appendChild(リストアイテム);
     }
   }
 })
+
+function displayNames(value) {
+  入力.value = value;
+}
+
+function removeElements() {
+  let 物件 = document.querySelectorAll('.list-items');
+  物件.forEach((item) => {
+    item.remove()
+  })
+}

@@ -222,24 +222,3 @@ body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.目録 {
-    background: #fff;
-    margin-top: 5px;
-    color: #000;
-    overflow: hidden;
-}
-
-.メインコンテナの上部 .目録 {
-    margin-top: 10px;
-}
-
-.目録 li {
-    height: 45px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.目録 li:hover {
-    background: red;
-}
-
