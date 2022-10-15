@@ -96,7 +96,7 @@ setInterval(()=>{
 
 
 //搜尋各個國家内容📄
-let 国リスト = [
+/*let 国リスト = [
   'fuck',
   'friend',
   'you',
@@ -139,3 +139,4 @@ function removeElements() {
     item.remove()
   })
 }
+*/
